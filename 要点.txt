@@ -1,0 +1,77 @@
+- 影响因素
+  - 自然
+    - $CO_{2}$
+    - $NO_{x}$
+    - $PO^{3-}_{4}$
+    - 其它自然物质
+    - 水
+  - 社会
+    - 营养
+      - 卡路里
+    - 极度贫困比例
+      - $1.90/day
+    - 教育资源
+    - 电力
+    - 洁净水资源
+
+- 历史研究（参考作用）
+
+- **初步模型**
+
+  - 假设（人必需的量）
+
+    - 人均营养量
+    - 人口密度
+
+  - 计算方式
+    $$
+    \mathrm{carrying\ \ capacity}=\dfrac{\mathrm{总资源}}{\mathrm{need\ \ per\ \ capita}}
+    $$
+    初步计算：120亿
+
+- **动态**模型
+
+  - 获得一些基础数据
+  - **由于不可抗力因素不可打破的上限**
+  - 计算
+    - $R^2$​​拟合计算**相关系数**
+      - 对每个国家计算最大人口
+
+- 解决方案
+
+  - 一些展望
+
+    - 新能源
+    - 环境保护（造林）
+    - 政策
+    - 减少温室效应
+    - 垃圾管理
+
+  - # 正片
+
+    - 算法：$Q-Learning$
+
+      - 操作：自动更新，并选最优的那个
+        $$
+        Q(s,a)\leftarrow (1-\alpha)\cdot Q(s,a)+\alpha\cdot (R+\gamma Q(s',a'))
+        $$
+
+        - $s=\text{目前地球 carrying capacity}$
+        - $a=\text{目前政策}$
+        - $s'=\text{未来地球 carrying capacity}$
+        - $a'=\text{最优政策}$
+        - $R=\text{人口增长}$
+        - $\gamma=\text{政策持久性}$​
+        - $\alpha=\text{实施滞后性}$​​
+
+        $$
+        Q^{\mathrm{new}}\left( s_t,a_t \right) \gets \left( 1-\alpha \right) \underbrace{Q\left( s_t,a_t \right) }_{\text{reward}}+\underbrace{\alpha }_{\text{learning rate}}\overbrace{\left( \underbrace{r_t}_{\text{reward}}+\underbrace{\gamma }_{\text{discount factor}} \right. \underbrace{\max_a Q\left( s_{t+1},a \right) }_{\text{estimate of optimal future value}})}^{\mathrm{learned} \mathrm{value}}
+        $$ {$$
+Q^{\mathrm{new}}\left( s_t,a_t \right) \gets \left( 1-\alpha \right) \underbrace{Q\left( s_t,a_t \right) }_{\text{reward}}+\underbrace{\alpha }_{\text{learning rate}}\overbrace{\left( \underbrace{r_t}_{\text{reward}}+\underbrace{\gamma }_{\text{discount factor}} \right. \underbrace{\max_a Q\left( s_{t+1},a \right) }_{\text{estimate of optimal future value}})}^{\mathrm{learned} \mathrm{value}}
+$$
+}
+
+
+
+
+
