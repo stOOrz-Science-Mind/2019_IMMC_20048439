@@ -1,4 +1,4 @@
-# TheFirstEssay
+# 2019_IMMC_20048439
 
 IMMC Dynamic Decisions
 
@@ -9,3 +9,5 @@ Upd on 24 September 2021:
 Upd on 7 February 2022:
 
 LICENSE已经完成上传
+
+Credits to team 20048439 for the original paper.
